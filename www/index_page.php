@@ -1,0 +1,6 @@
+<?php
+	$bb_dir = ".";
+	$bb_file = "index";
+	$bb_relroot = "";
+	$bb_page = unserialize(base64_decode("YToxMjp7czozOiJ2ZXIiO2Q6MTtzOjg6InJlZGlyZWN0IjtzOjA6IiI7czo5OiJjYWNoZXRpbWUiO2k6LTE7czo4OiJlYXN5ZWRpdCI7YjoxO3M6Nzoic2l0ZW1hcCI7YjowO3M6MTU6InNpdGVtYXBwcmlvcml0eSI7czo2OiJub3JtYWwiO3M6NzoiZG9jdHlwZSI7czo2OiJIVE1MIDUiO3M6MTA6Im1ldGFyb2JvdHMiO3M6MDoiIjtzOjU6InBlcm1zIjthOjA6e31zOjU6ImxhbmdzIjthOjI6e3M6NToiZW5fdXMiO2E6MDp7fXM6MjoiZW4iO3M6NToiZW5fdXMiO31zOjc6Im9uZWxhbmciO2I6MTtzOjExOiJkZWZhdWx0bGFuZyI7czo1OiJlbl91cyI7fQ=="));
+?>

@@ -1,0 +1,75 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	background-color: #FFFFFF;
+	min-width: 600px;    /* Minimum width of layout.  Removeable. */
+}
+
+div.pagewrap {
+}
+
+div.header {
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+div.contentwrap {
+}
+
+div.contentwrap div.colmask {
+	position: relative;
+	clear: both;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	background-color: lightcoral;  /* Right-column background color. */
+}
+
+div.contentwrap div.colmask div.colmid {
+	float: left;
+	width: 100%;
+	position: relative;
+	right: 20%;  /* Right-column width. */
+	background-color: beige;  /* Center-column background color. */
+}
+
+div.contentwrap div.colmask div.colmid div.colleft {
+	float: left;
+	width: 100%;
+	position: relative;
+	right: 60%;  /* Center-column width. */
+	background-color: aliceblue;  /* Left-column background color. */
+}
+
+div.contentwrap div.colmask div.colmid div.colleft div.col1 {
+	float: left;
+	position: relative;
+	width: 60%;  /* Center-column width. */
+	left: 100%;
+	overflow: hidden;
+}
+
+div.contentwrap div.colmask div.colmid div.colleft div.col2 {
+	float: left;
+	position: relative;
+	width: 20%;  /* Left-column width. */
+	left: 20%;  /* Left-column width. */
+	overflow: hidden;
+}
+
+div.contentwrap div.colmask div.colmid div.colleft div.col3 {
+	float: left;
+	position: relative;
+	width: 20%;  /* Right-column width. */
+	left: 80%;  /* 100% - Left-column width. */
+	overflow: hidden;
+}
+
+div.footer {
+	clear: both;
+	float: left;
+	width: 100%;
+}

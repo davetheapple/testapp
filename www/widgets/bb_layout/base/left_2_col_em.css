@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	background-color: #FFFFFF;
+	min-width: 600px;    /* Minimum width of layout.  Removeable. */
+}
+
+div.pagewrap {
+}
+
+div.header {
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+div.contentwrap {
+}
+
+div.contentwrap div.colmask {
+	position: relative;
+	clear: both;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	background-color: aliceblue;  /* Left-column background color. */
+}
+
+div.contentwrap div.colmask div.colright {
+	float: left;
+	width: 200%;
+	position: relative;
+	left: 12em;  /* Left-column width. */
+	background-color: beige;  /* Right-column background color. */
+}
+
+div.contentwrap div.colmask div.colright div.col1wrap {
+	float: right;
+	width: 50%;
+	position: relative;
+	right: 50%;
+}
+
+div.contentwrap div.colmask div.colright div.col1wrap div.col1 {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+div.contentwrap div.colmask div.colright div.col1wrap div.col1inner {
+	position: relative;
+	margin-right: 12em;  /* Left-column width. */
+}
+
+div.contentwrap div.colmask div.colright div.col2 {
+	float: left;
+	width: 12em;  /* Left-column width. */
+	position: relative;
+	right: 12em;  /* Left-column width. */
+	overflow: hidden;
+}
+
+div.footer {
+	clear: both;
+	float: left;
+	width: 100%;
+}

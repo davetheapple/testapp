@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	background-color: #FFFFFF;
+	min-width: 600px;    /* Minimum width of layout.  Removeable. */
+}
+
+div.pagewrap {
+}
+
+div.header {
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+div.contentwrap {
+}
+
+div.contentwrap div.colmask {
+	position: relative;
+	clear: both;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	background-color: beige;  /* Right-column background color. */
+}
+
+div.contentwrap div.colmask div.colleft {
+	float: left;
+	width: 100%;
+	position: relative;
+	right: 25%;  /* Right-column width. */
+	background-color: aliceblue;  /* Left-column background color. */
+}
+
+div.contentwrap div.colmask div.colleft div.col1 {
+	float: left;
+	position: relative;
+	width: 75%;  /* Left-column width. */
+	left: 25%;  /* Right-column width. */
+	overflow: hidden;
+}
+
+div.contentwrap div.colmask div.colleft div.col2 {
+	float: left;
+	position: relative;
+	width: 25%;  /* Right-column width. */
+	left: 25%;  /* Right-column width. */
+	overflow: hidden;
+}
+
+div.footer {
+	clear: both;
+	float: left;
+	width: 100%;
+}

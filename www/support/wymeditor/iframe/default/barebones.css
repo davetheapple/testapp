@@ -1,0 +1,79 @@
+/* Left-Align */
+.left-align {
+	text-align: left;
+}
+
+/* Center-Align */
+.center-align {
+	text-align: center;
+}
+
+/* Right-Align */
+.right-align {
+	text-align: right;
+}
+
+/* Justify-Align */
+.justify-align {
+	text-align: justify;
+}
+
+/* Wrap Shortcode */
+p.wrap-shortcode {
+	background-image: url(lbl-div-shortcode.gif);
+}
+
+/* Wrap Start */
+p.wrap-start {
+	background-image: url(lbl-div-p.gif);
+}
+
+/* Wrap End */
+p.wrap-end {
+	background-image: url(lbl-xdiv-p.gif);
+}
+
+/* Float Left */
+p.float-left {
+	float: none; margin-right: 50px;
+}
+
+/* Float Right */
+p.float-right {
+	float: none; margin-left: 50px;
+}
+
+/* Clear Floats */
+.float-clear {
+	clear: none; border-top: 2px dashed #6A2F8D;
+}
+
+/* First Line */
+p.first-line {
+	margin-top: 20px;
+}
+
+/* New Table Row */
+p.table-row {
+	background-image: url(lbl-table-p.png); border-top: 2px dashed #378F37;
+}
+
+/* New Table Cell */
+p.table-cell {
+	background-image: url(lbl-table-p.png);
+}
+
+/* Vertical-Align Top */
+p.vert-align-top {
+	vertical-align: baseline; padding-bottom: 2em;
+}
+
+/* Vertical-Align Bottom */
+p.vert-align-bottom {
+	vertical-align: baseline; padding-top: 2em;
+}
+
+/* Table End */
+p.table-end {
+	background-image: url(lbl-xtable-p.png);
+}

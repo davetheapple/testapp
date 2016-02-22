@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<link rel="stylesheet" href="right_2_col_em.css" type="text/css" media="screen" />
+</head>
+<body>
+#start
+// SEO-friendly (1-2) 2-column em-widths liquid layout (content, 12em) with header and footer.
+// Sources:  http://matthewjamestaylor.com/blog/holy-grail-no-quirks-mode.htm, http://matthewjamestaylor.com/blog/ultimate-2-column-right-menu-ems.htm
+<div class="pagewrap">
+	<div class="header">@mw_header@</div>
+	<div class="contentwrap">
+		<div class="colmask">
+			<div class="colleft">
+				<div class="col1wrap">
+					<div class="col1">@mw_content@</div>
+				</div>
+				<div class="col2">@mw_left@</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">@mw_footer@</div>
+</div>
+#end
+</body>
+</html>

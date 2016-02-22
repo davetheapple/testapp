@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<link rel="stylesheet" href="3_col_em.css" type="text/css" media="screen" />
+</head>
+<body>
+#start
+// SEO-friendly (2-1-3) 3-column em-widths liquid layout (12em, content, 12em) with header and footer.
+// Sources:  http://matthewjamestaylor.com/blog/holy-grail-no-quirks-mode.htm, http://matthewjamestaylor.com/blog/ultimate-3-column-holy-grail-ems.htm
+<div class="pagewrap">
+	<div class="header">@mw_header@</div>
+	<div class="contentwrap">
+		<div class="colmask">
+			<div class="colmid">
+				<div class="colright">
+					<div class="col1wrap">
+						<div class="col1pad">
+							<div class="col1">@mw_content@</div>
+						</div>
+					</div>
+					<div class="col2">@mw_left@</div>
+					<div class="col3">@mw_right@</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">@mw_footer@</div>
+</div>
+#end
+</body>
+</html>

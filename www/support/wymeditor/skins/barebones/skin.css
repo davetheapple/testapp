@@ -1,0 +1,210 @@
+/*
+ * WYMeditor : what you see is What You Mean web-based editor
+ * Copyright (c) 2005 - 2009 Jean-Francois Hovinne, http://www.wymeditor.org/
+ * Dual licensed under the MIT (MIT-license.txt)
+ * and GPL (GPL-license.txt) licenses.
+ *
+ * For further information visit:
+ *      http://www.wymeditor.org/
+ *
+ * File Name:
+ *      skin.css
+ *      main stylesheet for the default WYMeditor skin
+ *      See the documentation for more info.
+ *
+ * File Authors:
+ *      Daniel Reszka (d.reszka a-t wymeditor dotorg)
+ *      CubicleSoft (for Barebones CMS integration plus lots of useful changes)
+*/
+
+/*TRYING TO RESET STYLES THAT MAY INTERFERE WITH WYMEDITOR*/
+        .wym_skin_barebones p, .wym_skin_barebones h2, .wym_skin_barebones h3,
+        .wym_skin_barebones ul, .wym_skin_barebones li { background: transparent url(); margin: 0; padding: 0; border-width:0; list-style: none; }
+
+
+/*HIDDEN BY DEFAULT*/
+        .wym_skin_barebones .wym_area_left          { display: none; }
+        .wym_skin_barebones .wym_area_right         { display: block; }
+
+
+/*TYPO*/
+        .wym_skin_barebones                { font-size: 62.5%; font-family: Verdana, Arial, sans-serif; }
+        .wym_skin_barebones h2             { font-size: 110%; /* = 11px */}
+        .wym_skin_barebones h3             { font-size: 100%; /* = 10px */}
+        .wym_skin_barebones li             { font-size: 100%; /* = 10px */}
+
+
+/*WYM_BOX*/
+        .wym_skin_barebones                { border: 1px solid gray; background: #f2f2f2; padding: 5px}
+
+    /*auto-clear the wym_box*/
+        .wym_skin_barebones:after 	        { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+ * html .wym_skin_barebones                { height: 1%;}
+
+
+/*WYM_HTML*/
+        .wym_skin_barebones .wym_html               { margin-right: 7px; }
+        .wym_skin_barebones .wym_html textarea      { width: 100%; height: 200px; border: 1px solid gray; background: white;  }
+
+
+/*WYM_IFRAME*/
+        .wym_skin_barebones .wym_iframe             { margin-right: 7px; }
+        .wym_skin_barebones .wym_iframe iframe      { width: 100%; height: 200px; border: 1px solid gray; background: white }
+
+
+/*AREAS*/
+        .wym_skin_barebones .wym_area_left          { width: 150px; float: left;}
+        .wym_skin_barebones .wym_area_right         { width: 150px; float: right;}
+        .wym_skin_barebones .wym_area_bottom        { height: 1%; clear: both;}
+ * html .wym_skin_barebones .wym_area_main          { height: 1%;}
+ * html .wym_skin_barebones .wym_area_top           { height: 1%;}
+ *+html .wym_skin_barebones .wym_area_top           { height: 1%;}
+
+/*SECTIONS SYSTEM*/
+
+    /*common defaults for all sections*/
+        .wym_skin_barebones .wym_section            { margin-bottom: 5px; }
+        .wym_skin_barebones .wym_section h2,
+        .wym_skin_barebones .wym_section h3         { padding: 1px 3px; margin: 0; }
+        .wym_skin_barebones .wym_section a          { padding: 0 3px; display: block; text-decoration: none; color: black; }
+        .wym_skin_barebones .wym_section a:hover    { background-color: #EBEEF5; }
+      /*hide section titles by default*/
+        .wym_skin_barebones .wym_section h2         { display: none; }
+      /*disable any margin-collapse*/
+        .wym_skin_barebones .wym_section            { padding-top: 1px; padding-bottom: 1px; }
+      /*auto-clear sections*/
+        .wym_skin_barebones .wym_section ul:after   { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+ * html .wym_skin_barebones .wym_section ul         { height: 1%;}
+
+    /*option: add this class to a section to make it render as a panel*/
+        .wym_skin_barebones .wym_panel              { }
+        .wym_skin_barebones .wym_panel h2           { display: block; }
+
+    /*option: add this class to a section to make it render as a dropdown menu*/
+        .wym_skin_barebones .wym_dropdown h2        { display: block; }
+        .wym_skin_barebones .wym_dropdown ul        { display: none; position: absolute; background: white; }
+        .wym_skin_barebones .wym_dropdown:hover ul,
+        .wym_skin_barebones .wym_dropdown.hover ul  { display: block; }
+
+    /*option: add this class to a section to make its elements render buttons (icons are only available for the wym_tools section for now)*/
+		.wym_skin_barebones .wym_buttons            { padding: 0; }
+        .wym_skin_barebones .wym_buttons li         { float:left;}
+        .wym_skin_barebones .wym_buttons a          { width: 20px; height: 20px; overflow: hidden; padding: 2px }
+      /*image replacements*/
+        .wym_skin_barebones .wym_buttons li a                         { background: url(icons.png) no-repeat; text-indent: -9999px; margin: 2px; }
+        .wym_skin_barebones .wym_buttons li a:hover                   { background-color: #CAD1E1; border: 1px solid #0A246A; margin: 1px; }
+        .wym_skin_barebones .wym_buttons li.wym_button_disabled a     { opacity: .1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)"; filter: alpha(opacity=10); background-color: transparent; cursor: default; }
+        .wym_skin_barebones .wym_buttons li.wym_button_disabled a:hover  { background-color: transparent; border: none; margin: 2px; }
+        .wym_skin_barebones .wym_buttons li.wym_tools_strong a        { background-position: 0 -382px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_emphasis a      { background-position: 0 -22px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_superscript a   { background-position: 0 -430px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_subscript a     { background-position: 0 -454px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_ordered_list a  { background-position: 0 -48px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_unordered_list a{ background-position: 0 -72px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_indent a        { background-position: 0 -574px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_outdent a       { background-position: 0 -598px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_undo a          { background-position: 0 -502px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_redo a          { background-position: 0 -526px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_link a          { background-position: 0 -96px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_unlink a        { background-position: 0 -168px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_image a         { background-position: 0 -121px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_table a         { background-position: 0 -144px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_paste a         { background-position: 0 -552px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_html a          { background-position: 0 -193px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_preview a       { background-position: 0 -408px;}
+        .wym_skin_barebones .wym_buttons li.wym_tools_save a          { background-image: url(disk.png); background-repeat: no-repeat; }
+
+        .wym_skin_barebones li.wym_containers_th        { display: none; }
+
+		.wym_skin_barebones .wym_panel li.wym_button_disabled a           { color: #999999; }
+		.wym_skin_barebones .wym_panel li.wym_button_disabled a:hover     { background-color: #FFFFFF; cursor: default; }
+		.wym_skin_barebones .wym_panel li a.wym_class_disabled            { color: #999999; }
+		.wym_skin_barebones .wym_panel li a.wym_class_disabled:hover      { background-color: #FFFFFF; cursor: default; }
+		.wym_skin_barebones .wym_panel li a.wym_class_used                { background-color: #EBF5ED; }
+		.wym_skin_barebones .wym_panel li a.wym_class_used:hover          { background-color: #CFE8D5; }
+
+		.wym_skin_barebones .wym_dropdown li.wym_button_disabled a        { color: #999999; }
+		.wym_skin_barebones .wym_dropdown li.wym_button_disabled a:hover  { background-color: #FFFFFF; cursor: default; }
+		.wym_skin_barebones .wym_dropdown li a.wym_class_disabled         { color: #999999; }
+		.wym_skin_barebones .wym_dropdown li a.wym_class_disabled:hover   { background-color: #FFFFFF; cursor: default; }
+		.wym_skin_barebones .wym_dropdown li a.wym_class_used             { background-color: #EBF5ED; }
+		.wym_skin_barebones .wym_dropdown li a.wym_class_used:hover       { background-color: #CFE8D5; }
+
+/*DECORATION*/
+        .wym_skin_barebones .wym_section h2             { background: #ddd; border: solid gray; border-width: 0 0 1px;}
+        .wym_skin_barebones .wym_section h2 span        { color: gray;}
+        .wym_skin_barebones .wym_panel                  { padding: 0; border: solid gray; border-width: 1px; background: white;}
+        .wym_skin_barebones .wym_panel ul               { margin: 2px 0 5px; }
+        .wym_skin_barebones .wym_dropdown               { padding: 0; border: solid gray; border-width: 1px 1px 0 1px; }
+        .wym_skin_barebones .wym_dropdown ul            { border: solid gray; border-width: 0 1px 1px 1px; margin-left: -1px; padding: 5px 10px 5px 3px;}
+
+/*DIALOGS*/
+        .wym_dialog div.row         { margin-bottom: 5px;}
+        .wym_dialog div.row input   { margin-right: 5px;}
+        .wym_dialog div.row label   { float: left; width: 120px; display: block; text-align: right; margin-right: 10px; }
+        .wym_dialog div.row-indent  { padding-left: 160px; }
+        /*autoclearing*/
+        .wym_dialog div.row:after            { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+        .wym_dialog div.row                  { display: inline-block; }
+            /* Hides from IE-mac \*/
+            * html .wym_dialog div.row       { height: 1%; }
+            .wym_dialog div.row              { display: block; }
+            /* End hide from IE-mac */
+
+/*WYMEDITOR_LINK*/
+        a.wym_wymeditor_link        { text-indent: -9999px; float: right; display: block; width: 50px; height: 15px; background: url(../wymeditor_icon.png);  overflow: hidden; text-decoration: none;  }
+
+div.barebones_multi_wymeditor_wrapper .ui-tabs {
+	padding: 0px;
+	border: none;
+}
+
+div.barebones_multi_wymeditor_wrapper .ui-tabs .ui-tabs-nav {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+}
+
+div.barebones_multi_wymeditor_wrapper .ui-tabs .ui-tabs-nav li {
+	font-size: 0.7em;
+}
+
+div.barebones_multi_wymeditor_wrapper .ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+	font-weight: bold;
+}
+
+div.barebones_multi_wymeditor_wrapper .ui-tabs .ui-tabs-nav li a.wymeditclose {
+	float: left;
+	cursor: pointer;
+	padding: 3px 5px;
+	margin: 0.5em 0.4em 0px 0px;
+	color: #FFFFFF;
+	background-color: #D02D2D;
+	border: 1px solid #973F47;
+	font-size: 9px;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+div.barebones_multi_wymeditor_wrapper .ui-tabs .ui-tabs-nav li.ui-sortable-helper a.wymeditclose {
+	display: none;
+}
+
+div.barebones_multi_wymeditor_wrapper .ui-tabs .ui-tabs-nav li a.wymeditclose:hover {
+	background-color: #F76868;
+}
+
+div.barebones_multi_wymeditor_wrapper .ui-tabs .ui-tabs-panel {
+	padding: 0px;
+}
+
+div.barebones_multi_wymeditor_wrapper .ui-tabs .ui-tabs-panel div.wym_skin_barebones {
+	border-top: none;
+}
+

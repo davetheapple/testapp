@@ -1,0 +1,31 @@
+div.statusprogressbar {
+	margin-bottom: 3px;
+	display: none;
+}
+
+div.statusprogressinfo {
+	margin-bottom: 15px;
+	display: none;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.statusinfowrap {
+	display: block;
+	margin-bottom: 3px;
+}
+
+a.statusshowhidemessages {
+	display: block;
+	margin: 3px 0px 3px 3px;
+}
+
+div.statusmessages {
+	margin-left: 10px;
+	margin-bottom: 3px;
+	border: 1px solid #C5C5C5;
+	padding: 7px;
+	font-size: 0.85em;
+	display: none;
+}

@@ -1,0 +1,97 @@
+div.uploadprogressbar {
+	margin-bottom: 3px;
+	display: none;
+}
+
+div.uploadprogressinfo {
+	margin-bottom: 15px;
+	display: none;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.uploadbuttonwrap {
+	display: block;
+	margin-bottom: 3px;
+}
+
+a.uploadshowhidemessages {
+	display: block;
+	margin: 3px 0px 3px 3px;
+}
+
+div.uploadmessages {
+	margin-left: 10px;
+	margin-bottom: 3px;
+	border: 1px solid #C5C5C5;
+	padding: 7px;
+	font-size: 0.85em;
+	display: none;
+}
+
+
+/* Swiped from jquery.fileupload.css.  Heavily modified. */
+span.uploadbuttonwrap {
+	position: relative;
+	overflow: hidden;
+
+	background-color: #F3F3EF;
+	border: 1px solid #003C74;
+	color: #000000;
+	border-radius: 0.3em;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+span.uploadbuttonwrap span.uploadbuttonwrapinner {
+	border: 2px solid #F3F3EF;
+	display: inline-block;
+	padding: 0.2em 0.6em;
+	border-radius: 0.3em;
+}
+
+span.uploadbuttonwrap span.uploadbuttonwrapinner span {
+}
+
+span.uploadbuttonwrap:hover {
+	background-color: #F3F3EF;
+}
+
+span.uploadbuttonwrap:hover span.uploadbuttonwrapinner {
+	border: 2px solid #FBCA6A;
+}
+
+span.uploadbuttonwrap:active {
+	background-color: #E6E6E0;
+}
+
+span.uploadbuttonwrap:active span.uploadbuttonwrapinner {
+	border: 2px solid #F3F3EF;
+}
+
+span.uploadbuttonwrap input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	opacity: 0;
+	-ms-filter: 'alpha(opacity=0)';
+	font-size: 200px;
+	direction: ltr;
+	cursor: pointer;
+}
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+
+span.uploadbuttonwrap input {
+	filter: alpha(opacity=0);
+	font-size: 100%;
+	height: 100%;
+}
+
+}

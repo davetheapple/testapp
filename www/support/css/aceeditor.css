@@ -1,0 +1,169 @@
+div.barebones_multi_eauieditor_wrapper .ui-tabs {
+	padding: 0px;
+	border: none;
+}
+
+div.barebones_multi_eauieditor_wrapper .ui-tabs .ui-tabs-nav {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+}
+
+div.barebones_multi_eauieditor_wrapper .ui-tabs .ui-tabs-nav li {
+	font-size: 0.7em;
+}
+
+div.barebones_multi_eauieditor_wrapper .ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+	font-weight: bold;
+}
+
+div.barebones_multi_eauieditor_wrapper .ui-tabs .ui-tabs-nav li a.eauieditclose {
+	float: left;
+	cursor: pointer;
+	padding: 3px 5px;
+	margin: 0.5em 0.4em 0px 0px;
+	color: #FFFFFF;
+	background-color: #D02D2D;
+	border: 1px solid #973F47;
+	font-size: 9px;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+div.barebones_multi_eauieditor_wrapper .ui-tabs .ui-tabs-nav li.ui-sortable-helper a.eauieditclose {
+	display: none;
+}
+
+div.barebones_multi_eauieditor_wrapper .ui-tabs .ui-tabs-nav li a.eauieditclose:hover {
+	background-color: #F76868;
+}
+
+div.barebones_multi_eauieditor_wrapper .ui-tabs .ui-tabs-panel {
+	padding: 0;
+	background: #F2F2F2;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+div.barebones_single_eauieditor_wrapper {
+	border: 1px solid gray;
+}
+
+div.barebones_multi_eauieditor_wrapper div.barebones_single_eauieditor_wrapper {
+	border-top: none;
+}
+
+div.barebones_single_eauieditor_toolbar {
+	margin: 0;
+	padding: 5px;
+	text-align: left;
+}
+
+div.barebones_single_eauieditor_toolbar img {
+	vertical-align: middle;
+	margin: 2px;
+	padding: 1px;
+	cursor: pointer;
+}
+
+div.barebones_single_eauieditor_toolbar img.barebones_single_eauieditor_toolbar_selected {
+	background-color: #F4F2E8;
+	border: 1px solid #C0C0BB;
+	margin: 1px;
+}
+
+div.barebones_single_eauieditor_toolbar img.barebones_single_eauieditor_toolbar_hover {
+	background-color: #CAD1E1;
+	border: 1px solid #0A246A;
+	margin: 1px;
+}
+
+div.barebones_single_eauieditor_toolbar img.barebones_single_eauieditor_toolbar_disabled {
+	opacity: .1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity=10);
+	cursor: default;
+}
+
+div.barebones_single_eauieditor_toolbar img.barebones_single_eauieditor_toolbar_disabled.barebones_single_eauieditor_toolbar_hover {
+	background-color: transparent;
+	border: none;
+	margin: 2px;
+}
+
+div.barebones_single_eauieditor_toolbar img.barebones_single_eauieditor_toolbar_spacer {
+	background-color: #C0C0BB;
+	height: 18px;
+	margin: 1px 2px;
+	padding: 0;
+	width: 2px;
+	cursor: default;
+}
+
+div.barebones_single_eauieditor_toolbar select {
+	font-size: 0.7em;
+	margin: 5px;
+}
+
+div.barebones_single_eauieditor_tip {
+	border: 1px solid transparent;
+	padding: 0.3em;
+}
+
+div.barebones_single_eauieditor_dialog.ui-widget .ui-widget {
+	font-size: 0.7em;
+}
+
+form.barebones_single_eauieditor_form form {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+form.barebones_single_eauieditor_form table {
+	width: 95%;
+}
+
+form.barebones_single_eauieditor_form td {
+	vertical-align: top;
+}
+
+form.barebones_single_eauieditor_form div.formitem {
+	font-size: 0.8em;
+}
+
+form.barebones_single_eauieditor_form div.formitem2 {
+	margin-top: 10px;
+}
+
+form.barebones_single_eauieditor_form div.formitem div.formitemtitle {
+	font-weight: bold;
+}
+
+form.barebones_single_eauieditor_form div.formitem input.text {
+	margin-top: 2px;
+	width: 95%;
+	padding: .4em;
+}
+
+form.barebones_single_eauieditor_form div.formitem input.checkbox {
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+form.barebones_single_eauieditor_form .ui-dialog .ui-state-error {
+	padding: .3em;
+}
+
+div.barebones_single_eauieditor_real {
+	position: relative;
+	border-top: 1px solid gray;
+	background-color: white;
+}

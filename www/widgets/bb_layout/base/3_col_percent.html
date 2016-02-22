@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<link rel="stylesheet" href="3_col_percent.css" type="text/css" media="screen" />
+</head>
+<body>
+#start
+// SEO-friendly (2-1-3) 3-column percent-widths liquid layout (20%, content, 20%) with header and footer.
+// Source:  http://matthewjamestaylor.com/blog/perfect-3-column.htm
+<div class="pagewrap">
+	<div class="header">@mw_header@</div>
+	<div class="contentwrap">
+		<div class="colmask">
+			<div class="colmid">
+				<div class="colleft">
+					<div class="col1">@mw_content@</div>
+					<div class="col2">@mw_left@</div>
+					<div class="col3">@mw_right@</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">@mw_footer@</div>
+</div>
+#end
+</body>
+</html>

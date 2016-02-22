@@ -1,0 +1,66 @@
+CSSTidy
+
+Changelog: http://csstidy.svn.sourceforge.net/viewvc/csstidy/trunk/
+The included 'NEWS' file in the distribution also tracks the latest changes.
+
+
+css_optimiser.php is the optional web-interface for trying out various CSSTidy settings.
+If you do not plan on using this, it is safe to delete the file.  One less PHP file to
+worry about.
+  An online version should be available here: http://cdburnerxp.se/cssparse/css_optimiser.php
+
+class.csstidy*.php are the CSS classes that power CSSTidy.
+
+Docs/* contains the CSSTidy documentation for developers.
+
+templates/* contains templates that are loaded when data.inc.php is included.  Including
+class.csstidy.php will include data.inc.php.  Templates describe the output content.
+
+testing/* contains unit tests to validate that any changes to CSSTidy don't break stuff
+before submitting them back into the repository.
+
+To run the unit tests, you will need to install Pear::Text_Diff and download and put
+SimpleTest (http://simpletest.org/) into the testing/ directory.
+
+
+Sample PHP code:
+
+<?php
+	require_once "class.csstidy.php";
+
+	$data = file_get_contents("test.css");
+
+	$css = new csstidy();
+	$css->set_cfg(array(
+		"remove_last_;" => false,
+		"sort_properties" => false,
+		"template" => "altdefault"
+	));
+
+	$css->parse($data);
+
+	$data = $css->print->plain();
+
+	echo "<pre>";
+	echo $data;
+	echo "</pre>";
+?>
+
+Avoid naming any globals '$csstidy' as there could be conflicts.
+
+
+
+	Copyright 2005, 2006, 2007 Florian Schmitz
+
+  CSSTidy is free software; you can redistribute it and/or modify
+  it under the terms of the GNU Lesser General Public License as published by
+  the Free Software Foundation; either version 2.1 of the License, or
+  (at your option) any later version.
+
+  CSSTidy is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.

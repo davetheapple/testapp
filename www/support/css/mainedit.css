@@ -1,0 +1,509 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 900px) {
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	min-width: 600px;    /* Minimum width of layout.  Removeable. */
+}
+
+div.pagewrap {
+}
+
+div.contentwrap {
+}
+
+div.contentwrap div.colmask {
+	position: relative;
+	clear: both;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	background-color: #F4F4F4;  /* Left-column background color. */
+}
+
+div.contentwrap div.colmask div.colright {
+	float: left;
+	width: 200%;
+	position: relative;
+	left: 200px;  /* Left-column width. */
+	background-color: #FFFFFF;  /* Right-column background color. */
+	border-left: 1px solid #CCCCCC;
+}
+
+div.contentwrap div.colmask div.colright div.col1wrap {
+	float: right;
+	width: 50%;
+	position: relative;
+	right: 50%;
+}
+
+div.contentwrap div.colmask div.colright div.col1wrap div.col1 {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+div.contentwrap div.colmask div.colright div.col1wrap div.col1inner {
+	position: relative;
+	margin-right: 200px;  /* Left-column width. */
+}
+
+div.contentwrap div.colmask div.colright div.col2 {
+	float: left;
+	width: 200px;  /* Left-column width. */
+	position: relative;
+	right: 200px;  /* Left-column width. */
+	overflow: hidden;
+}
+
+div.stickycol {
+	z-index: -1;
+	clear: both;
+	width: 200px;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	background-color: #F4F4F4;
+	border-right: 1px solid #CCCCCC;
+}
+
+}
+
+img {
+	border: 0px none;
+	margin: 0px;
+}
+
+form {
+	border: 0px none;
+	margin: 0px;
+}
+
+a {
+	color: #035488;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #444444;
+	text-decoration: underline;
+}
+
+div.maincontent {
+	margin: 5px 10px 10px 15px;
+}
+
+#mainviewinfo {
+	margin: 0px 5px 3px 5px;
+	font-size: 0.8em;
+}
+
+#mainviewinfo #mainviewinfo_vulnerabilities {
+	background-color: #FCDCDC;
+	border: 1px solid #880000;
+	color: #880000;
+	padding: 10px 24px 10px 24px;
+	margin-bottom: 10px;
+}
+
+#mainviewinfo #mainviewinfo_updates {
+	background-color: #FCF5DC;
+	border: 1px solid #AF8901;
+	color: #AF8901;
+	padding: 10px 24px 10px 24px;
+	margin-bottom: 10px;
+}
+
+#mainviewwrap {
+}
+
+#mainview {
+	border: 1px dashed #D9D9D9;
+}
+
+#sessioninfo {
+	margin: 10px 5px 3px 5px;
+	font-size: 0.8em;
+}
+
+.leftnav {
+	position: relative;
+}
+
+.leftnav .menu {
+	font-size: 0.7em;
+	border: 1px solid #CCCCCC;
+	background-color: #FFFFFF;
+	margin: 4px;
+	padding: 5px;
+}
+
+.leftnav .menu .title {
+	font-weight: bold;
+	padding-bottom: 6px;
+}
+
+.leftnav .menu a {
+	display: block;
+	border-top: 1px solid #DDDDDD;
+	padding: 6px 15px;
+}
+
+.leftnav .menu a:hover {
+	background-color: #EFEFEF;
+	text-decoration: none;
+}
+
+/* Floating navigation menu styles. */
+#navbutton {
+	float: right;
+	margin-left: 1.0em;
+	border: 1px solid #D3D3D3;
+	border-radius: 0.3em;
+	background-color: #FFFFFF;
+	padding: 0.2em 0.4em;
+	font-weight: bold;
+	font-size: 0.7em;
+	color: #333333;
+	cursor: pointer;
+}
+
+#navbutton:hover {
+	background-color: #EAEAEA;
+	border: 1px solid #BBBBBB;
+}
+
+#navbutton.clicked {
+	background-color: #EAEAEA;
+	border-top: 1px solid #BBBBBB;
+	border-left: 1px solid #BBBBBB;
+	border-right: 1px solid #BBBBBB;
+	border-bottom: 1px solid #EAEAEA;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.leftnav {
+	display: none;
+}
+
+#navdropdown {
+	display: none;
+	position: absolute;
+	right: 0;
+	z-index: 10000;
+	width: 200px;
+	background-color: #EAEAEA;
+	border: 1px solid #BBBBBB;
+	font-weight: normal;
+	font-size: 0.75em;
+}
+
+#navdropdown div.leftnav {
+	display: block;
+}
+
+#navdropdown div.leftnav .menu {
+	font-size: 1.0em;
+}
+
+@media (min-width: 900px) {
+
+#navbutton {
+	display: none;
+}
+
+#navdropdown {
+	display: none !important;
+}
+
+.leftnav {
+	display: block;
+}
+
+}
+
+#mainprops {
+	position: relative;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	display: none;
+	padding: 5px;
+	border: 1px solid #E5E5E5;
+	background-color: #F5F5F5;
+	color: #000000;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+#mainprops2 {
+	position: relative;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	display: none;
+	padding: 5px;
+	border: 1px solid #E5E5E5;
+	background-color: #F5F5F5;
+	color: #000000;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+#loadcondscripts {
+	position: relative;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	display: none;
+	padding: 5px;
+	border: 1px solid #E5E5E5;
+	background-color: #F5F5F5;
+	color: #000000;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+#mainprops div.propclose {
+	position: relative;
+	padding: 5px;
+	float: right;
+}
+
+#mainprops div.propclose a {
+	padding: 3px 5px;
+	color: #FFFFFF;
+	background-color: #D02D2D;
+	border: 1px solid #973F47;
+	font-size: 9px;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+#mainprops div.propclose a:hover {
+	background-color: #F76868;
+}
+
+#mainprops div.proptitle {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+#mainprops div.propdesc {
+	margin-top: 5px;
+	padding: 10px 15px 15px 15px;
+	border-top: 1px solid #CCCCCC;
+	color: #333333;
+	font-size: 1.0em;
+}
+
+#mainprops div.propinfo {
+	margin: 0px 15px 10px 15px;
+	font-weight: bold;
+	display: none;
+	position: relative;
+}
+
+#mainprops div.propinfo .success {
+	background-color: #E8FCDC;
+	border: 1px solid #008800;
+	color: #008800;
+	padding: 10px 24px 10px 24px;
+}
+
+#mainprops div.propinfo .error {
+	background-color: #FCDCDC;
+	border: 1px solid #880000;
+	color: #880000;
+	padding: 10px 24px 10px 24px;
+}
+
+#mainprops div.propinfo .info {
+	background-color: #DCDCDC;
+	border: 1px solid #333333;
+	color: #333333;
+	padding: 10px 24px 10px 24px;
+}
+
+#mainprops div.propmain {
+	margin: 0px 15px 0px 15px;
+}
+
+#mainprops div.propmain div.formfields {
+	border: 1px solid #E5E5E5;
+	background-color: #FBFBFB;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 0.9em;
+}
+
+#mainprops div.propmain div.alt {
+	border: none;
+	background-color: #F5F5F5;
+	padding: 0px;
+}
+
+#mainprops div.propmain div.formfields div.formitem {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+#mainprops div.propmain div.formfields div.formitem div.formitemtitle {
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+#mainprops div.propmain div.formfields div.formitem div.static {
+	margin-left: 7px;
+	width: 95%;
+	font-size: 0.95em;
+}
+
+#mainprops div.propmain div.formfields div.formitem input.text {
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-left: 7px;
+	width: 95%;
+	border: 1px solid #C5C5C5;
+}
+
+#mainprops div.propmain div.formfields div.formitem div.textareawrap {
+	width: 95%;
+}
+
+#mainprops div.propmain div.formfields div.formitem textarea.text {
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-left: 7px;
+	width: 100%;
+	border: 1px solid #C5C5C5;
+}
+
+#mainprops div.propmain div.formfields div.formitem input.checkbox {
+	margin-left: 7px;
+	border: 1px solid #C5C5C5;
+}
+
+#mainprops div.propmain div.formfields div.formitem select {
+	margin-left: 7px;
+	width: 95%;
+	border: 1px solid #C5C5C5;
+}
+
+#mainprops div.propmain div.formfields div.formitem div.uploadinject {
+	margin-left: 7px;
+	width: 95%;
+}
+
+#mainprops div.propmain div.formfields div.formitem div.formitemdesc {
+	margin-left: 15px;
+	font-size: 0.9em;
+}
+
+#mainprops div.propmain div.formsubmit {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#mainprops div.propmain div.formsubmit input.submit {
+	background-color: #FFFFFF;
+	border: 1px solid #0F5C8E;
+	font-weight: bold;
+	padding: 3px;
+}
+
+#mainprops div.propmain hr {
+	border: none 0;
+	border-top: 1px dashed #999999;
+	height: 1px;
+}
+
+#mainprops div.propmain table {
+	border: 1px solid #E5E5E5;
+	background-color: #FFFFFF;
+}
+
+#mainprops div.propmain th, td {
+	padding: 2px 7px;
+}
+
+#mainprops div.propmain tr.head {
+	background-color: #ECECEC;
+}
+
+#mainprops div.propmain tr.row {
+	background-color: #FAFAFA;
+}
+
+#mainprops div.propmain tr.altrow {
+	background-color: #F5F5F5;
+}
+
+#mainprops div.propmain tr.row td.draghandle {
+	cursor: move;
+}
+
+#mainprops div.propmain tr.dragactive {
+	background-color: #E3E3E3;
+}
+
+#mainprops div.propmain a.download {
+	padding: 2px 5px 2px;
+	color: #FFFFFF;
+	background-color: #2D98D0;
+	border: 1px solid #3F7997;
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+#mainprops div.propmain a.download:hover {
+	background-color: #68C6F7;
+}
+
+#fileeditor {
+	position: relative;
+	margin: 10px 0px 20px 0px;
+	display: none;
+}
+
+#fileeditorloader {
+	display: none;
+}
+
+textarea.editareaedit {
+	width: 100%;
+	height: 600px;
+}
+
+#contenteditor {
+	position: relative;
+	margin: 10px 0px 20px 0px;
+	display: none;
+}
